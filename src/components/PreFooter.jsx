@@ -7,7 +7,7 @@ function PreFooter() {
                 <p>Let's talk about your project</p>
                 <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
             </div>
-            <button class="light-btn">Get in touch</button>
+            <button className="light-btn">Get in touch</button>
         </div>
     )
 }

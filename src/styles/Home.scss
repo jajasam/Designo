@@ -1,0 +1,152 @@
+@import '../styles/variables';
+
+.home {
+    padding-bottom: 160px;
+
+    .hero {
+        height: 883px;
+        margin-bottom: 120px;
+        background: no-repeat url('../assets/home/desktop/bg-pattern-hero-home.svg') $peach;
+        background-position: left center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+            max-width: 327px;
+
+            h1 {
+                font-size: 32px;
+                line-height: 48px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 26px;
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+        }
+
+        img {
+            position: absolute;
+            bottom: -285px;
+        }
+    }
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 120px;
+    }
+
+    .qualities {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .quality:first-child div.illustration:after {
+        transform: rotate(-90deg);
+    }
+
+    .quality:nth-child(2) div.illustration:after {
+        transform: rotate(-180deg);
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .home {
+        margin: 0 1.15rem;
+
+        .qualities {
+            gap: 2rem;
+        }
+
+        .hero {
+            border-radius: 15px;
+            background-position: center right;
+            max-width: 1111px;
+            padding: 0 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            .text {
+                max-width: 550px;
+
+                h1 {
+                    font-size: 48px;
+                }
+
+                p {
+                    font-size: 16px;
+                    max-width: 445px;
+                }
+            }
+
+            img {
+                margin: auto;
+                bottom: -300px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1111px) {
+    .home {
+        .hero {
+            max-height: 640px;
+            flex-direction: row;
+            background-position: 80% 100%;
+            
+            .text {
+                align-items: start;
+                padding-top: 0;
+                margin-left: 95px;
+
+                h1 {
+                    text-align: start;
+                }
+
+                p {
+                    text-align: start;
+                }
+            }
+
+            img {
+                right: -20px;
+                bottom: -200px;
+            }
+        }
+
+        .categories {
+            display: grid;
+            grid-template: repeat(2, auto) / repeat(2, auto);
+        }
+    
+        .category:first-child {
+            grid-row-start: 1;
+            grid-row-end: span 2;
+          
+        }
+
+        .qualities {
+            flex-direction: row;
+            gap: 30px;
+        }
+    }
+}

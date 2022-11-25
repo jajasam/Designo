@@ -1,0 +1,64 @@
+@import './variables';
+
+.quality {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    .illustration {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+
+    .illustration:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: no-repeat url('../assets/home/desktop/bg-pattern-hero-home.svg') center/cover;
+        z-index: -1;
+    }
+
+    img {
+        position: absolute;
+    }
+
+    img::first-letter {
+        text-transform:capitalize;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 350px;
+        color: $dark-grey;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 5px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1110px) {
+    .quality {
+        flex-direction: row;
+
+        .text {
+            text-align: start;
+            max-width: 439px;
+        }
+    }
+}

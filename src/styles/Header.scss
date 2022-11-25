@@ -29,3 +29,10 @@ header {
         display: block;
     }
 }
+
+@media screen and (min-width: 1110px) {
+    header {
+        height: 155px;
+        padding-top: 64px;
+    }
+}
