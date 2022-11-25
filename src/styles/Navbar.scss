@@ -1,0 +1,36 @@
+@import '../styles/variables';
+
+nav {
+    width: 370px;
+    display: none;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: $dark-grey;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        
+
+        &:after {
+            content: '';
+            width: 0%;
+            height: 0.5px;
+            background-color: $dark-grey;
+            position: absolute;
+            transition: all 0.2s ease;
+            transform: translateY(-5px);
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}

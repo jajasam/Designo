@@ -1,0 +1,147 @@
+@import '../styles/variables';
+
+footer {
+    height: 815px;
+    background-color: $black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 40px;
+    width: 100%;
+    padding-top: 253px;
+    padding-bottom: 64px;
+
+    .top,
+    .bottom {
+        width: 100%;
+        max-width: 1111px;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        border-top: 1px solid rgb(255, 255, 255, 0.1);
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+            gap: 2rem;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: white;
+            line-height: 14px;
+        }
+    }
+
+    .address,
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0.5;
+        gap: 0;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .address p:first-child,
+    .contact p {
+        font-weight: 700;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: space-between;
+        width: 184px;
+    }
+
+    .socials img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .socials img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        height: 423px;
+        padding-top: 166px;
+
+
+        .top {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }   
+        nav {
+            border-top: none;
+            max-width: 370px;
+            margin-top: 0;
+            padding-top: 0;
+
+            ul {
+                flex-direction: row;
+                margin-top: 0;
+            }
+        }
+
+        .top {
+            flex-direction: row;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+        }
+
+        .bottom {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+        .address,
+        .contact {
+            text-align: start;
+        }
+
+        .socials {
+            margin-left: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    footer {
+        height: 393px;
+        padding: 144px 164px 72px 164px;
+
+        .socials {
+            margin-left: 250px;
+        }
+    }
+}

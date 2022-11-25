@@ -1,0 +1,31 @@
+@import '_variables.scss';
+
+header {
+    height: 96px;
+    max-width: 1111px;
+    padding: 1.5rem;
+    margin: auto;
+
+    .content {
+        height: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .hamburger-icon {
+        width: 30px;
+        height: 20px;
+        background: no-repeat url('../assets/shared/mobile/icon-hamburger.svg') center/cover;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger-icon {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+}

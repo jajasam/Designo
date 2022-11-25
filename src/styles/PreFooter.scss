@@ -1,0 +1,59 @@
+@import '../styles/variables';
+
+.get-in-touch {
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 90%;
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    min-height: 379px;
+    top: 850px;
+    text-align: center;
+    background: no-repeat url("../assets/shared/desktop/bg-pattern-call-to-action.svg") center/cover $peach;
+    max-width: 1111px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    p:first-child {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 6px;
+        max-width: 300px;
+    }
+
+    p:nth-child(2) {
+        margin-bottom: 2rem;
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .get-in-touch {
+        bottom: -500px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .get-in-touch {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: start;
+        padding: 6rem;
+        bottom: -350px;
+
+        div {
+            align-items: start;
+        }
+    }
+}
