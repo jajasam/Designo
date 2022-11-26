@@ -1,0 +1,51 @@
+@import './variables';
+
+.text_img {
+    display: flex;
+    flex-direction: column;
+    background: no-repeat url("../assets/shared/desktop/bg-pattern-three-circles.svg") center/cover #FDF3F0;
+
+    .text {
+        text-align: center;
+        padding: 90px 1.5rem;
+
+        h2 {
+            color: $peach;
+            font-size: 32px;
+        }
+
+        p{
+            padding-bottom: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .text_img {
+        border-radius: 15px;
+        margin: 0 1.5rem;
+
+        img {
+            border-radius: 15px 15px 0 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .text_img {
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        max-height: 640px;
+
+        img {
+            height: 100%;
+            border-radius: 15px 0 0 15px;
+        }
+
+        .text {
+            text-align: start;
+            margin: 5rem;
+        }
+    }
+}

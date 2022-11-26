@@ -5,7 +5,7 @@ import data from "../assets/data.json"
 
 import '../styles/Home.scss'
 
-function Home() {
+function Home({ device }) {
 const webDesignImgSize = window.innerWidth > 1111 ? '-large': '';
 const qualitiesElem = data.qualities.map(({name, description},i) => <Quality 
         qualityName={name} 
@@ -17,7 +17,8 @@ const categoriesElem = data.categories.map(({name, img},i) => {
 return <CategoryOverview 
         categoryName={`${name}`} 
         img={`${img}${name === 'Web Design' ? webDesignImgSize : ''}`} 
-        key={i} />
+        key={i}
+        device={device} />
 })
 
   return (

@@ -1,16 +1,6 @@
 import '../styles/CategoryOverview.scss'
 
-function CategoryOverview({ categoryName, img }) {
-    const screenSize = window.innerWidth;
-    let device;
-    if (screenSize < 768) {
-        device = 'mobile'
-    } else if (screenSize > 768 && screenSize < 1111) { 
-        device = 'tablet'
-    } else {
-        device = 'desktop'
-    }
-
+function CategoryOverview({ categoryName, img, device }) {
     return (
         <div className="category">
             {

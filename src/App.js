@@ -9,11 +9,23 @@ import About from './pages/About'
 
 
 function App() {
+  const screenSize = window.innerWidth;
+    let device;
+    if (screenSize < 768) {
+        device = 'mobile'
+    } else if (screenSize > 768 && screenSize < 1111) { 
+        device = 'tablet'
+    } else {
+        device = 'desktop'
+    }
+
+
   return (
     <>
       <Header />
       <main>
-        <About />
+        {/* <Home device={device} /> */}
+        <About device={device} />
       </main>
       <PreFooter />
       <Footer />
