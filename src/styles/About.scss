@@ -2,7 +2,7 @@
 
 .about {
     margin-bottom: 380px;
-    
+
     .banner {  
         display: flex;
         flex-direction: column;
@@ -30,12 +30,16 @@
 @media screen and (min-width: 768px) {
     .about {
         .banner {
-            border-radius: 15px;
             margin: 0 1.5rem;
             margin-bottom: 120px !important;
+
+            img {
+                border-radius: 15px 15px 0 0 ;
+            }
     
             .text {
                 background: no-repeat url("../assets/about/desktop/bg-pattern-hero-about-desktop.svg") -225% 125% $peach;
+                border-radius: 0 0 15px 15px;
 
                 div {
                     padding: 64px 58px;
@@ -55,11 +59,13 @@
             img {
                 height: 100%;
                 max-width: 480px;
+                border-radius: 0 15px 15px 0;
             }
     
             .text {
                 text-align: start;
                 background-position: bottom right;
+                border-radius: 15px 0 0 15px;
 
                 div {
                     margin-left: 6rem;

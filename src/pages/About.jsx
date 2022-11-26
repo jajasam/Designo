@@ -8,11 +8,10 @@ import data from "../assets/data.json"
 
 function About({ device }) {
     const citiesElem = <Cities cities={data.cities} />
-    const bannerBgClass = device === 'tablet' || device === 'desktop' ? 'desktop' : 'mobile';
 
     return (
         <div className="about container">
-            <div className={`banner ${bannerBgClass}`}>
+            <div className="banner">
                 <img 
                     src={require(`../assets/about/${device}/image-about-hero.jpg`)} alt="About"
                     width="100%"
