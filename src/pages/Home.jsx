@@ -1,10 +1,24 @@
-import CategorieOverview from '../components/CategoryOverview'
+import CategoryOverview from '../components/CategoryOverview'
 import Quality from '../components/Quality'
+
+import data from "../assets/data.json"
 
 import '../styles/Home.scss'
 
 function Home() {
 const webDesignImgSize = window.innerWidth > 1111 ? '-large': '';
+const qualitiesElem = data.qualities.map(({name, description},i) => <Quality 
+        qualityName={name} 
+        description={description} 
+        key={i} 
+        i={i} />)
+
+const categoriesElem = data.categories.map(({name, img},i) => {
+return <CategoryOverview 
+        categoryName={`${name}`} 
+        img={`${img}${name === 'Web Design' ? webDesignImgSize : ''}`} 
+        key={i} />
+})
 
   return (
     <div className="home">
@@ -21,32 +35,14 @@ const webDesignImgSize = window.innerWidth > 1111 ? '-large': '';
         <img src={require('../assets/home/desktop/image-hero-phone.png')} alt="Phone" width="600px" height="800px" />
       </div>
       <div className="categories container">
-        <CategorieOverview 
-          categoryName='Web Design' 
-          img={`web-design${webDesignImgSize}`}
-        />
-        <CategorieOverview 
-          categoryName='App Design'
-          img="app-design"
-        />
-        <CategorieOverview 
-          categoryName='Graphic Design'
-          img="graphic-design"
-        />
+        {
+          categoriesElem && categoriesElem
+        }
       </div>
       <div className="qualities container">
-        <Quality 
-          qualityName="passionate"
-          description="Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions."
-        />
-        <Quality 
-          qualityName="resourceful"
-          description="Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients' needs."
-        />
-        <Quality 
-          qualityName="friendly"
-          description="We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide."
-        />
+        {
+          qualitiesElem && qualitiesElem
+        }
       </div>
     </div>
   )

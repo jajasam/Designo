@@ -32,10 +32,7 @@
     }
 
     h2 {
-        letter-spacing: 1.4px;
-        font-size: 28px;
         color: white;
-        font-weight: 500;
     }
 
     a {
@@ -61,14 +58,5 @@
 
     &:hover:after {
         background-color: rgba(231, 129, 107, 0.8);
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .category {
-        h2 {
-            font-size: 40px;
-            letter-spacing: 2px;
-        }
     }
 }

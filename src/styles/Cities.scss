@@ -1,0 +1,39 @@
+.cities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 2.5rem;
+    gap: 58px;
+
+    .city {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            h3 {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .cities {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .city {
+        width: 300px;
+    }
+}

@@ -26,16 +26,7 @@
             padding-top: 80px;
             max-width: 327px;
 
-            h1 {
-                font-size: 32px;
-                line-height: 48px;
-                font-weight: 500;
-            }
-
             p {
-                font-size: 15px;
-                line-height: 26px;
-                font-weight: 400;
                 margin-bottom: 24px;
             }
         }
@@ -58,14 +49,6 @@
         flex-direction: column;
         gap: 80px;
     }
-
-    .quality:first-child div.illustration:after {
-        transform: rotate(-90deg);
-    }
-
-    .quality:nth-child(2) div.illustration:after {
-        transform: rotate(-180deg);
-    }
 }
 
 @media screen and (min-width: 768px)  {
@@ -87,12 +70,7 @@
             .text {
                 max-width: 550px;
 
-                h1 {
-                    font-size: 48px;
-                }
-
                 p {
-                    font-size: 16px;
                     max-width: 445px;
                 }
             }

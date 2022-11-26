@@ -5,6 +5,7 @@ import PreFooter from './components/PreFooter'
 import Footer from './components/Footer'
 
 import Home from './pages/Home'
+import About from './pages/About'
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <>
       <Header />
       <main>
-        <Home />
+        <About />
       </main>
       <PreFooter />
       <Footer />
