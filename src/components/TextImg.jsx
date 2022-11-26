@@ -1,6 +1,6 @@
-import '../styles/Text_Img.scss'
+import '../styles/TextImg.scss'
 
-function Text_Img({ title, description, img, device }) {
+function TextImg ({ title, description, img, device }) {
     return (
         <div className="text_img">
             <img src={require(`../assets/about/${device}/image-${img}.jpg`)} alt={`${title}`} width="100%" height="320px" />           
@@ -13,4 +13,4 @@ function Text_Img({ title, description, img, device }) {
     )
 }
 
-export default Text_Img
+export default TextImg

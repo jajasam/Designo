@@ -1,5 +1,74 @@
-// .about {
-//     .text_img {
-//         margin-top: 
-//     }
-// }
+@import './variables';
+
+.about {
+    margin-bottom: 380px;
+    
+    .banner {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+
+        .text {
+            background: no-repeat url("../assets/about/mobile/bg-pattern-hero-about-mobile.svg")   30% 25% $peach;
+            height: 100%;
+            width: 100%;
+
+            div {
+                padding: 80px 1.5rem;
+            }
+
+            h2 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        .banner {
+            border-radius: 15px;
+            margin: 0 1.5rem;
+            margin-bottom: 120px !important;
+    
+            .text {
+                background: no-repeat url("../assets/about/desktop/bg-pattern-hero-about-desktop.svg") -225% 125% $peach;
+
+                div {
+                    padding: 64px 58px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .about {
+        .banner {
+            flex-direction: row-reverse;
+            height: 480px;
+            margin: 0;
+    
+            img {
+                height: 100%;
+                max-width: 480px;
+            }
+    
+            .text {
+                text-align: start;
+                background-position: bottom right;
+
+                div {
+                    margin-left: 6rem;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
