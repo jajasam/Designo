@@ -1,4 +1,4 @@
-import CategoryOverview from '../components/CategoryOverview'
+import ServiceOverview from '../components/ServiceOverview'
 import Quality from '../components/Quality'
 
 import data from "../assets/data.json"
@@ -13,9 +13,9 @@ const qualitiesElem = data.qualities.map(({name, description},i) => <Quality
         key={i} 
         i={i} />)
 
-const categoriesElem = data.categories.map(({name, img},i) => {
-return <CategoryOverview 
-        categoryName={`${name}`} 
+const servicesElem = data.services.map(({name, img},i) => {
+return <ServiceOverview 
+        serviceName={`${name}`} 
         img={`${img}${name === 'Web Design' ? webDesignImgSize : ''}`} 
         key={i}
         device={device} />
@@ -35,9 +35,9 @@ return <CategoryOverview
         </div>
         <img src={require('../assets/home/desktop/image-hero-phone.png')} alt="Phone" width="600px" height="800px" />
       </div>
-      <div className="categories container">
+      <div className="services container">
         {
-          categoriesElem && categoriesElem
+          servicesElem && servicesElem
         }
       </div>
       <div className="qualities container">

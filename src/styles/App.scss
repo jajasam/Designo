@@ -117,12 +117,12 @@ button {
   img::first-letter {
     text-transform:capitalize;
   }
-  
-  .bubble-1 div.illustration:after {
-    transform: rotate(-90deg);
-  }
-  
-  .bubble-2 div.illustration:after {
-    transform: rotate(-180deg);
-  }
+}
+
+.bubble-0 .illustration:after {
+  transform: rotate(-90deg);
+}
+
+.bubble-1 .illustration:after {
+  transform: rotate(-180deg);
 }

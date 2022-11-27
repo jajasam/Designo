@@ -37,7 +37,7 @@
         }
     }
 
-    .categories {
+    .services {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
@@ -111,15 +111,14 @@
             }
         }
 
-        .categories {
+        .services {
             display: grid;
             grid-template: repeat(2, auto) / repeat(2, auto);
         }
     
-        .category:first-child {
+        .service:first-child {
             grid-row-start: 1;
             grid-row-end: span 2;
-          
         }
 
         .qualities {

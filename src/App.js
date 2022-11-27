@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 
 import Home from './pages/Home'
 import About from './pages/About'
+import Service from './pages/Service'
 
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
       <Header />
       <main>
         {/* <Home device={device} /> */}
-        <About device={device} />
+        {/* <About device={device} /> */}
+        <Service />
       </main>
       <PreFooter />
       <Footer />
