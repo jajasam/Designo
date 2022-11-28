@@ -6,21 +6,20 @@ import data from "../assets/data.json"
 import '../styles/Home.scss'
 
 function Home({ device }) {
-const webDesignImgSize = window.innerWidth > 1111 ? '-large': '';
 const qualitiesElem = data.qualities.map(({name, description},i) => <Quality 
         qualityName={name} 
         description={description} 
         key={i} 
-        i={i} />)
+        i={i} />
+)
 
-const servicesElem = data.services.map(({slug, name, img},i) => {
-return <ServiceOverview 
+const servicesElem = data.services.map(({slug, name, img},i) => <ServiceOverview 
         slug={slug}
-        serviceName={`${name}`} 
-        img={`${img}${name === 'Web Design' ? webDesignImgSize : ''}`} 
+        serviceName={name} 
+        img={img} 
         key={i}
         device={device} />
-})
+)
 
   return (
     <div className="home">

@@ -1,0 +1,73 @@
+@import './variables';
+
+.location {
+
+    .leaflet-container {
+        height: 320px;
+    }
+
+    .info {
+        background: no-repeat url("../assets/shared/desktop/bg-pattern-small-circle.svg") top left #FDF3F0;
+        height: 385px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+
+        p {
+            max-width: 45%;
+            margin: auto;
+        }
+
+        div p:first-child {
+            font-weight: bold;
+        }
+        
+        h2 {
+            color: $peach;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .location {
+        margin: 0 2.5rem;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .leaflet-container {
+            height: 325px;
+            border-radius: 15px;
+        }
+
+        .info {
+            border-radius: 15px;
+            background: no-repeat url("../assets/shared/desktop/bg-pattern-two-circles.svg") bottom left #FDF3F0;
+
+        }
+    
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .location {
+        margin: 0 2.5rem;
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+
+        .leaflet-container {
+            height: 325px;
+            width: 350px;
+            border-radius: 15px;
+        }
+
+        .info {
+            width: 730px;
+            height: 325px;
+        }
+    }
+}
