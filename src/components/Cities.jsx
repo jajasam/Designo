@@ -1,7 +1,9 @@
 import '../styles/Cities.scss'
 
-function Cities({ cities }) {
-    const citiesElem = cities.map(({name, img}, i) =>
+import data from "../assets/data.json"
+
+function Cities() {
+    const citiesElem = data.cities.map(({name, img}, i) =>
         <div className={`city bubble-${i}`} key={i}>
             <div className="illustration">
                 <img src={require(`../assets/shared/desktop/illustration-${img}.svg`)} alt={name}width="200px" height="200px" />
