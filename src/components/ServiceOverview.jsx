@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import '../styles/ServiceOverview.scss'
 
 function ServiceOverview({ slug, serviceName, img, device }) {
-    const webDesignImgSize = window.innerWidth > 1111 ? '-large': '-small';
+    const webDesignImgSize = window.innerWidth > 1111 ? '-large': '';
 
     return (
         <Link to={`/service/${slug}`} className="service-overview">

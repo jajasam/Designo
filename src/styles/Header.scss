@@ -2,11 +2,12 @@
 
 header {
     height: 96px;
-    max-width: 1111px;
-    padding: 1.5rem;
-    margin: auto;
+    padding: 35px 1.5rem;
+    background-color: white;
 
     .content {
+        max-width: 1111px;
+        margin: auto;
         height: 27px;
         display: flex;
         align-items: center;
@@ -17,11 +18,62 @@ header {
         width: 30px;
         height: 20px;
         background: no-repeat url('../assets/shared/mobile/icon-hamburger.svg') center/cover;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger-icon.close {
+        background: no-repeat url('../assets/shared/mobile/icon-close.svg') center/cover;
+        transition: all 0.3s ease;
     }
 }
 
+header .menu {
+    width: 100vw;
+    background-color: $black;
+    position: absolute;
+    left: 0; 
+    top: 96px;
+    height: 0;
+    transition: all 0.5s ease;
+    z-index: 200;
+
+    nav {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        height: 100%;
+        padding: 48px 24px;
+        transition: all 0.2s ease;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    nav a {
+        color: white;
+        font-size: 24px;
+    }
+}
+
+.menu.show {
+    height: 235px;
+    transition: all 0.4s ease;
+}
+
+.menu.show nav {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s ease 0.3s;
+}
+
 @media screen and (min-width: 768px) {
-    .hamburger-icon {
+    .hamburger-icon,
+    .menu {
         display: none;
     }
 
