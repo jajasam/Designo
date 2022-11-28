@@ -22,27 +22,33 @@
             "websites": [
                 {
                     "name": "Express",
-                    "description": "A multi-carrier shipping website for ecommerce businesses"
+                    "description": "A multi-carrier shipping website for ecommerce businesses",
+                    "img": "express"
                 },
                 {
                     "name": "Transfer",
-                    "description": "Site for low-cost money transfers and sending money within seconds"
+                    "description": "Site for low-cost money transfers and sending money within seconds",
+                    "img": "transfer"
                 },
                 {
                     "name": "Photon",
-                    "description": "A state-of-the-art music player with high-resolution audio and DSP effects"
+                    "description": "A state-of-the-art music player with high-resolution audio and DSP effects",
+                    "img": "photon"
                 },
                 {
                     "name": "Builder",
-                    "description": "Connects users with local contractors based on their location"
+                    "description": "Connects users with local contractors based on their location",
+                    "img": "builder"
                 },
                 {
                     "name": "Blogr",
-                    "description": "Blogr is a platform for creating an online blog or publication"
+                    "description": "Blogr is a platform for creating an online blog or publication",
+                    "img": "blogr"
                 },
                 {
                     "name": "Camp",
-                    "description": "Get expert training in coding, data, design, and digital marketing"
+                    "description": "Get expert training in coding, data, design, and digital marketing",
+                    "img": "camp"
                 }
             ]
         },
@@ -54,23 +60,28 @@
             "websites": [
                 {
                     "name": "Airfilter",
-                    "description": "Solving the problem of poor indoor air quality by filtering the air"
+                    "description": "Solving the problem of poor indoor air quality by filtering the air",
+                    "img": "airfilter"
                 },
                 {
                     "name": "Eyecam",
-                    "description": "Product that lets you edit your favorite photos and videos at any time"
+                    "description": "Product that lets you edit your favorite photos and videos at any time",
+                    "img": "eyecam"
                 },
                 {
                     "name": "Faceit",
-                    "description": "Get to meet your favorite internet superstar with the faceit app"
+                    "description": "Get to meet your favorite internet superstar with the faceit app",
+                    "img": "faceit"
                 },
                 {
                     "name": "Todo",
-                    "description": "A todo app that features cloud sync with light and dark mode"
+                    "description": "A todo app that features cloud sync with light and dark mode",
+                    "img": "todo"
                 },
                 {
                     "name": "Loopstudios",
-                    "description": "A VR experience app made for Loopstudios"
+                    "description": "A VR experience app made for Loopstudios",
+                    "img": "loopstudios"
                 }
             ]
         },
@@ -82,15 +93,18 @@
             "websites": [
                 {
                     "name": "Tim Brown",
-                    "description": "A book cover designed for Tim Brown's new release, 'Change'"
+                    "description": "A book cover designed for Tim Brown's new release, 'Change'",
+                    "img": "change"
                 },
                 {
                     "name": "Boxed water",
-                    "description": "A simple packaging concept made for Boxed Water"
+                    "description": "A simple packaging concept made for Boxed Water",
+                    "img": "boxed-water"
                 },
                 {
                     "name": "Science!",
-                    "description": "A poster made in collaboration with the Federal Art Project"
+                    "description": "A poster made in collaboration with the Federal Art Project",
+                    "img": "science"
                 }
             ]
         }

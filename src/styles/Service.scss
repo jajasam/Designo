@@ -1,0 +1,44 @@
+.service {
+    .websites {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 6rem auto;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .service {
+        margin: 0 1.15rem;
+
+        .websites {
+            gap: 32px;
+        }
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .service {
+        .websites {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .services {
+            flex-direction: row;
+        }
+    }
+}

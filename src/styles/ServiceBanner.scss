@@ -1,7 +1,6 @@
 @import './variables';
 
 .service-banner {
-    background: no-repeat url("../assets/shared/desktop/bg-pattern-small-circle.svg") top right $peach;
     color: white;
     display: flex;
     flex-direction: column;
@@ -9,4 +8,26 @@
     align-items: center;
     text-align: center;
     padding: 80px 1.5rem;
+}
+
+.web-design {
+    background: no-repeat url("../assets/web-design/desktop/bg-pattern-intro-web.svg") top right $peach;
+}
+
+.app-design {
+    background: no-repeat url("../assets/app-design/desktop/bg-pattern-intro-app.svg") top right $peach;
+}
+
+.graphic-design {
+    background: no-repeat url("../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg") top right $peach;
+}
+
+@media screen and (min-width: 768px) {
+    .service-banner {      
+        border-radius: 15px;
+          
+        p {
+            max-width: 54%;
+        }
+    }
 }
