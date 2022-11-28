@@ -4,10 +4,11 @@ import '../styles/Locations.scss'
 import data from '../assets/data.json'
 
 function Locations() {
-const locationsElem = data.cities.map(({name, office, address, phone, mail}, i) => <SingleLocation
+const locationsElem = data.cities.map(({name, office, address, coordinates, phone, mail}, i) => <SingleLocation
         name={name}
         office={office}
         address={address}
+        coordinates={coordinates}
         phone={phone}
         mail={mail}
         key={i}

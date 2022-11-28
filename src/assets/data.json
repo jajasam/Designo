@@ -115,6 +115,7 @@
             "img": "canada",
             "office": "Designo Central Office",
             "address" : "3886 Wellington Street Toronto, Ontario M9C 3J5",
+            "coordinates": [43.643579,-79.580322],
             "phone": "+1 253-863-8967",
             "mail": "contact@designo.co"
         },
@@ -123,6 +124,7 @@
             "img": "australia",
             "office": "Designo AU Office",
             "address" : "19 Balonne Street New South Wales 2443",
+            "coordinates": [-30.3292659,149.788041],
             "phone": "(02) 6720 9092",
             "mail": "contact@designo.au"
         },
@@ -131,6 +133,7 @@
             "img": "united-kingdom",
             "office": "Designo UK Office",
             "address" : "13 Colorado Way Rhyd-y-fro SA8 9GA",
+            "coordinates": [51.7279055,-3.9304897],
             "phone": "078 3115 1400",
             "mail": "contact@designo.uk"
         }
