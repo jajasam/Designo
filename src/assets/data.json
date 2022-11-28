@@ -15,6 +15,7 @@
     ],
     "services": [
         {
+            "slug": "web-design",
             "name": "Web Design",
             "description": "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
             "img": "web-design",
@@ -46,6 +47,7 @@
             ]
         },
         {
+            "slug": "app-design",
             "name": "App Design",
             "description": "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
             "img": "app-design",
@@ -73,6 +75,7 @@
             ]
         },
         {
+            "slug": "graphic-design",
             "name": "Graphic Design",
             "description": "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
             "img": "graphic-design",

@@ -1,3 +1,5 @@
+import { Routes, Route } from "react-router-dom";
+
 import './styles/App.scss';
 
 import Header from './components/Header'
@@ -7,6 +9,8 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Service from './pages/Service'
+import Locations from './pages/Locations'
+import Contact from './pages/Contact'
 
 
 function App() {
@@ -25,9 +29,13 @@ function App() {
     <>
       <Header />
       <main>
-        {/* <Home device={device} /> */}
-        {/* <About device={device} /> */}
-        <Service />
+        <Routes>
+            <Route path="/" exact element={<Home device={device} />} />
+            <Route path="/service/:serviceName" element={<Service device={device} />} />
+            <Route path="/about" element={<About device={device} />} />
+            <Route path="/locations" element={<Locations />} />
+            <Route path="/contact" exact element={<Contact />} />
+          </Routes>
       </main>
       <PreFooter />
       <Footer />

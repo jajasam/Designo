@@ -13,8 +13,9 @@ const qualitiesElem = data.qualities.map(({name, description},i) => <Quality
         key={i} 
         i={i} />)
 
-const servicesElem = data.services.map(({name, img},i) => {
+const servicesElem = data.services.map(({slug, name, img},i) => {
 return <ServiceOverview 
+        slug={slug}
         serviceName={`${name}`} 
         img={`${img}${name === 'Web Design' ? webDesignImgSize : ''}`} 
         key={i}
