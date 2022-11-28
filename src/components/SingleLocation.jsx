@@ -31,14 +31,16 @@ function SingleLocation({ name, office, address, coordinates, phone,mail }) {
             </MapContainer>
             <div className="info">
                 <h2>{name}</h2>
-                <div className="office">
-                    <p>{office}</p>
-                    <p>{address}</p>
-                </div>
-                <div className="contact">
-                    <p>Contact</p>
-                    <p>P : {phone}</p>
-                    <p>M : {mail}</p>
+                <div className="bottom">
+                    <div className="office">
+                        <p>{office}</p>
+                        <p>{address}</p>
+                    </div>
+                    <div className="contact">
+                        <p>Contact</p>
+                        <p>P : {phone}</p>
+                        <p>M : {mail}</p>
+                    </div>
                 </div>
             </div>
         </div>

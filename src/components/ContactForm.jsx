@@ -29,6 +29,7 @@ function ContactForm() {
                 </form>
                 <div className="submit-btn">
                     <button 
+                        className="btn light-btn"
                         type="submit"
                         form="contact-form"
                         value="Submit">Submit</button>

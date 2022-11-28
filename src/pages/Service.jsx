@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 
 import '../styles/Service.scss'
@@ -6,6 +5,7 @@ import '../styles/Service.scss'
 import ServiceBanner from '../components/ServiceBanner'
 import WebsiteExample from '../components/WebsiteExample'
 import ServiceOverview from '../components/ServiceOverview'
+import PreFooter from '../components/PreFooter'
 
 import data from '../assets/data.json'
 
@@ -51,6 +51,7 @@ function Service ({ device }) {
                     }
                 </div>
             </div>
+            <PreFooter />
         </div>
     )
 }

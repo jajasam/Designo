@@ -1,5 +1,6 @@
 import Cities from '../components/Cities'
 import TextImg from '../components/TextImg'
+import PreFooter from '../components/PreFooter'
 
 import '../styles/About.scss'
 
@@ -32,6 +33,7 @@ function About({ device }) {
                 img="world-class-talent"
                 device={device}
             />
+            <PreFooter />
         </div>
     )
 }

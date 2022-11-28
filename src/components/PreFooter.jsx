@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/PreFooter.scss'
 
 function PreFooter() {
@@ -7,7 +8,7 @@ function PreFooter() {
                 <p>Let's talk about your project</p>
                 <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
             </div>
-            <button className="light-btn">Get in touch</button>
+            <Link to="/contact" className="btn light-btn">Get in touch</Link>
         </div>
     )
 }

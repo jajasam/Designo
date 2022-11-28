@@ -2,6 +2,7 @@ import SingleLocation from '../components/SingleLocation'
 import '../styles/Locations.scss'
 
 import data from '../assets/data.json'
+import PreFooter from '../components/PreFooter'
 
 function Locations() {
 const locationsElem = data.cities.map(({name, office, address, coordinates, phone, mail}, i) => <SingleLocation
@@ -20,6 +21,7 @@ const locationsElem = data.cities.map(({name, office, address, coordinates, phon
             {
                 locationsElem && locationsElem
             }
+            <PreFooter />
         </div>
     )
 }

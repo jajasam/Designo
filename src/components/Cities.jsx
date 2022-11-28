@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import '../styles/Cities.scss'
 
 import data from "../assets/data.json"
@@ -10,7 +12,7 @@ function Cities() {
             </div>
             <div className="text">
                 <h3>{name}</h3>
-                <button className="dark-btn">See location</button>
+                <Link to="/locations" className="btn dark-btn">See location</Link>
             </div>
         </div>
     )    

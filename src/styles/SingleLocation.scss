@@ -68,6 +68,24 @@
         .info {
             width: 730px;
             height: 325px;
+            padding: 88px 95px;
+
+            h2 {
+                text-align: start;
+            }
+
+            .bottom {
+                display: flex;
+
+                div {
+                    width: 100%;
+                }
+
+                p {
+                    max-width: 100%;
+                    text-align: start;
+                }
+            }
         }
     }
 }

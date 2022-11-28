@@ -1,5 +1,8 @@
+import { Link } from 'react-router-dom'
+
 import ServiceOverview from '../components/ServiceOverview'
 import Quality from '../components/Quality'
+import PreFooter from '../components/PreFooter'
 
 import data from "../assets/data.json"
 
@@ -31,7 +34,7 @@ const servicesElem = data.services.map(({slug, name, img},i) => <ServiceOverview
           <p>
             With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.
           </p>
-          <button className="light-btn">Learn more</button>
+          <Link to="/about" className="btn light-btn">Learn more</Link>
         </div>
         <img src={require('../assets/home/desktop/image-hero-phone.png')} alt="Phone" width="600px" height="800px" />
       </div>
@@ -45,6 +48,7 @@ const servicesElem = data.services.map(({slug, name, img},i) => <ServiceOverview
           qualitiesElem && qualitiesElem
         }
       </div>
+      <PreFooter />
     </div>
   )
 }
