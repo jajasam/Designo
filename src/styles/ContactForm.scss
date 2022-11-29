@@ -15,10 +15,23 @@
 
         input {
             height: 62px;
+            max-height: 62px;
+        }
+
+        textarea {
+            height: 127px;
+            max-height: 127px;
+            margin-bottom: 1.5rem;
+        }
+
+        input:not([value=""]):not(:focus):invalid,
+        textarea:not([value=""]):not(:focus):invalid {
+            background: url("../assets/contact/desktop/icon-error.svg") no-repeat 95% 50%;
         }
         
         input,
         textarea {
+            outline: none;
             background: none;
             border: none;
             border-bottom: 1px solid white;
@@ -26,6 +39,7 @@
             opacity: 0.5;
             width: 100%;
             padding: 0 13px;
+            color: white;
         }
 
         textarea {
@@ -37,6 +51,12 @@
             color: white;
         }
 
+        input:focus,
+        textarea:focus {
+            background: none;
+            border: none;
+            border-bottom: 3px solid white;
+        }
     }
 }
 
@@ -71,7 +91,7 @@
         .left {
             width: 50%;
             height: 100%;
-            margin: auto;
+            padding-top: 80px;
         }
 
         .right {

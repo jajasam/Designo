@@ -12,25 +12,32 @@ function ContactForm() {
                     <input 
                         type="text" 
                         name="name" 
-                        placeholder="Name" />
+                        placeholder="Name" 
+                        required
+                    />
                     <input 
                         type="email" 
                         name="email" 
-                        placeholder="Email address" />
+                        placeholder="Email address"
+                        required
+                    />
                     <input 
                         type="tel"
                         name="tel"
-                        placeholder="Phone" />
+                        placeholder="Phone" 
+                        required
+                    />
                     <textarea 
                         name="message"  
                         cols="30" 
                         rows="6"
-                        placeholder="Your Message" />
+                        placeholder="Your Message"
+                        required
+                    />
                 </form>
                 <div className="submit-btn">
                     <button 
                         className="btn light-btn"
-                        type="submit"
                         form="contact-form"
                         value="Submit">Submit</button>
                 </div>
