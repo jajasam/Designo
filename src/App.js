@@ -1,4 +1,7 @@
+import { useEffect } from 'react'
 import { Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 
 import './styles/App.scss';
 
@@ -13,6 +16,8 @@ import Contact from './pages/Contact'
 
 
 function App() {
+  const { pathname } = useLocation();
+
   const screenSize = window.innerWidth;
     let device;
     if (screenSize < 768) {
@@ -23,6 +28,9 @@ function App() {
         device = 'desktop'
     }
 
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
 
   return (
     <>
