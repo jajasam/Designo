@@ -1,12 +1,17 @@
 import Cities from '../components/Cities'
 import TextImg from '../components/TextImg'
 import PreFooter from '../components/PreFooter'
+import LeafBgPattern from '../components/LeafBgPattern'
 
 import '../styles/About.scss'
 
 function About({ device }) {
     return (
         <div className="about container">
+            <LeafBgPattern 
+                position="top"
+                distanceTop={475} 
+            />
             <div className="banner">
                 <img 
                     src={require(`../assets/about/${device}/image-about-hero.jpg`)} alt="About"
@@ -34,6 +39,10 @@ function About({ device }) {
                 device={device}
             />
             <PreFooter />
+            <LeafBgPattern 
+                position="bottom"
+                distanceTop={1777} 
+            />
         </div>
     )
 }

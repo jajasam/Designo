@@ -1,0 +1,22 @@
+.bg-leaf {
+    position: absolute;
+    z-index: -10;
+    visibility: hidden;
+    width: 1006px;
+    height: 594px;
+  }
+  
+  .top {
+    left: 0;
+  }
+  
+  .bottom {
+    transform: rotate(180deg);
+    right: 0;
+}
+
+@media screen and (min-width: 1111px) {
+    .bg-leaf {
+      visibility: visible;
+    }
+  }

@@ -6,6 +6,7 @@ import ServiceBanner from '../components/ServiceBanner'
 import WebsiteExample from '../components/WebsiteExample'
 import ServiceOverview from '../components/ServiceOverview'
 import PreFooter from '../components/PreFooter'
+import LeafBgPattern from '../components/LeafBgPattern'
 
 import data from '../assets/data.json'
 
@@ -34,6 +35,10 @@ function Service ({ device }) {
 
     return (
         <div className="service">
+            <LeafBgPattern 
+                position="top"
+                distanceTop={281} 
+            />
             <ServiceBanner
                 slug={params}
                 title={serviceData[0].name}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import ServiceOverview from '../components/ServiceOverview'
 import Quality from '../components/Quality'
 import PreFooter from '../components/PreFooter'
+import LeafBgPattern from '../components/LeafBgPattern'
 
 import data from "../assets/data.json"
 
@@ -17,15 +18,20 @@ const qualitiesElem = data.qualities.map(({name, description},i) => <Quality
 )
 
 const servicesElem = data.services.map(({slug, name, img},i) => <ServiceOverview 
-        slug={slug}
-        serviceName={name} 
-        img={img} 
-        key={i}
-        device={device} />
+  slug={slug}
+  serviceName={name} 
+  img={img} 
+  key={i}
+  device={device} 
+/>
 )
 
   return (
     <div className="home">
+      <LeafBgPattern 
+        position="top"
+        distanceTop={475}
+      />
       <div className="hero">
         <div className="text">
           <h1>
@@ -48,6 +54,10 @@ const servicesElem = data.services.map(({slug, name, img},i) => <ServiceOverview
           qualitiesElem && qualitiesElem
         }
       </div>
+      <LeafBgPattern 
+        position="bottom"
+        distanceTop={1879}
+      />
       <PreFooter />
     </div>
   )
