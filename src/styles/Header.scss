@@ -44,6 +44,7 @@ header .menu {
         height: 100%;
         padding: 48px 24px;
         transition: all 0.2s ease;
+        width: 100%;
     }
 
     nav ul {
@@ -72,6 +73,11 @@ header .menu {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        height: 155px;
+        padding-top: 64px;
+    }
+
     .hamburger-icon,
     .menu {
         display: none;
@@ -79,12 +85,5 @@ header .menu {
 
     header nav {
         display: block;
-    }
-}
-
-@media screen and (min-width: 1110px) {
-    header {
-        height: 155px;
-        padding-top: 64px;
     }
 }

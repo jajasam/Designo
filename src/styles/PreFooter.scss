@@ -26,10 +26,10 @@
     }
     
     p:first-child {
-        font-size: 40px;
+        font-size: 32px;
         line-height: 40px;
         margin-bottom: 6px;
-        max-width: 300px;
+        max-width: 200px;
     }
 
     p:nth-child(2) {
@@ -42,6 +42,12 @@
     .get-in-touch {
         bottom: 325px;
         height: 350px;
+
+        p:first-child {
+            font-size: 40px;
+            max-width: 325px;
+            margin-bottom: 1rem;
+        }
     }
 }
 

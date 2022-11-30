@@ -16,19 +16,19 @@ body {
   color: $dark-grey;
 }
 
-main  {
+main:not(.contact)  {
   margin-bottom: 380px;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 500;
   line-height: 48px;
   margin-top: 0;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 500;
   line-height: 48px;
   letter-spacing: 2px;
@@ -135,7 +135,17 @@ p {
   transform: rotate(-180deg);
 }
 
-@media screen and (min-width: 1111px) {
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .container {
     padding: 0;
   }

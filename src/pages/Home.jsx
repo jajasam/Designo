@@ -23,6 +23,7 @@ const servicesElem = data.services.map(({slug, name, img},i) => <ServiceOverview
   img={img} 
   key={i}
   device={device} 
+  onHome={true}
 />
 )
 

@@ -22,7 +22,7 @@ function App() {
     let device;
     if (screenSize < 768) {
         device = 'mobile'
-    } else if (screenSize > 768 && screenSize < 1111) { 
+    } else if (screenSize >= 768 && screenSize < 1111) { 
         device = 'tablet'
     } else {
         device = 'desktop'
@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className={pathname.replace(/\//g,'')}>
         <Routes>
             <Route path="/" exact element={<Home device={device} />} />
             <Route path="/service/:serviceName" element={<Service device={device} />} />

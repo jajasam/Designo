@@ -27,20 +27,20 @@
     .website {
         flex-direction: row;
         min-width: 700px;
-    }
 
-    img {
-        border-radius: 15px 0 0 15px !important;
-        width: 40% !important;
-    }
+        img {
+            border-radius: 15px 0 0 15px !important;
+            width: 40% !important;
+        }
 
-    .text {
-        border-radius: 0 15px 15px 0 !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 60px;
-        width: 60%;
+        .text {
+            border-radius: 0 15px 15px 0 !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 60px;
+            width: 60%;
+        }
     }
 }
 

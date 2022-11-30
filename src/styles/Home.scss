@@ -5,7 +5,7 @@
         height: 883px;
         margin-bottom: 120px;
         background: no-repeat url('../assets/home/desktop/bg-pattern-hero-home.svg') $peach;
-        background-position: left center;
+        background-position: 0 -550%;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
@@ -59,7 +59,7 @@
 
         .hero {
             border-radius: 15px;
-            background-position: center right;
+            background-position: bottom right;
             max-width: 1111px;
             padding: 0 1.5rem;
             margin-left: auto;

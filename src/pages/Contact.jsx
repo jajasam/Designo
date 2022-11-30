@@ -4,7 +4,7 @@ import LeafBgPattern from '../components/LeafBgPattern'
 
 function Contact() {
     return (
-        <div className="contact container">
+        <div className="contact">
             <LeafBgPattern 
                 position="bottom"
                 distanceTop={885} 

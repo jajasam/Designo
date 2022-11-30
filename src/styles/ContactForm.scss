@@ -81,8 +81,10 @@
         min-height: 480px;
         gap: 95px;
         width: 100%;
-        margin: 0;
         background-position: left;
+        max-width: 1111px;
+        padding: 0 1.15rem;
+        margin: auto;
 
         form {
             margin: 0;

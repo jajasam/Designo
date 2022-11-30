@@ -1,6 +1,8 @@
 @import './variables';
 
 .about {
+    padding: 0;
+    
     .banner {  
         display: flex;
         flex-direction: column;
@@ -10,7 +12,7 @@
         text-align: center;
 
         .text {
-            background: no-repeat url("../assets/about/mobile/bg-pattern-hero-about-mobile.svg")   30% 25% $peach;
+            background: no-repeat url("../assets/about/mobile/bg-pattern-hero-about-mobile.svg")   40% 25% $peach;
             height: 100%;
             width: 100%;
 
@@ -52,7 +54,7 @@
     
             img {
                 height: 100%;
-                max-width: 480px;
+                width: auto;
                 border-radius: 0 15px 15px 0;
             }
     
@@ -60,6 +62,7 @@
                 text-align: start;
                 background-position: bottom right;
                 border-radius: 15px 0 0 15px;
+                width: 640px;
 
                 div {
                     margin-left: 6rem;

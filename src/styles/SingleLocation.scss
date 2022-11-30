@@ -4,6 +4,7 @@
 
     .leaflet-container {
         height: 320px;
+        z-index: -1;
     }
 
     .info {

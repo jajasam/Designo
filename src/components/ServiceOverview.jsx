@@ -2,8 +2,15 @@ import { Link } from "react-router-dom"
 
 import '../styles/ServiceOverview.scss'
 
-function ServiceOverview({ slug, serviceName, img, device }) {
-    const webDesignImgSize = window.innerWidth > 1111 ? '-large': '';
+function ServiceOverview({ slug, serviceName, img, device, onHome}) {
+    let webDesignImgSize;
+    if (device === 'desktop' && onHome) {
+        webDesignImgSize = '-large'
+    } else if (device === 'desktop' && !onHome) {
+        webDesignImgSize = '-small'
+    } else {
+        webDesignImgSize = ''
+    }
 
     return (
         <Link to={`/service/${slug}`} className="service-overview">
