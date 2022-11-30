@@ -1,6 +1,5 @@
 import '../styles/Footer.scss'
 import Navbar from '../components/Navbar'
-import PreFooter from '../components/PreFooter'
 import facebookLogo from '../assets/shared/desktop/icon-facebook.svg';
 import youtubeLogo from '../assets/shared/desktop/icon-youtube.svg';
 import twitterLogo from '../assets/shared/desktop/icon-twitter.svg';
