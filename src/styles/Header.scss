@@ -59,6 +59,10 @@ header .menu {
         color: white;
         font-size: 24px;
     }
+
+    &:after {
+        content: none;
+    }
 }
 
 .menu.show {

@@ -24,7 +24,7 @@ function Header() {
                 <Navbar />
             </div>
             <div className={`menu ${isMenuOpen ? 'show' : ''}`}>
-                <Navbar />
+                <Navbar setIsMenuOpen={setIsMenuOpen} />
             </div>
         </header>
     )
