@@ -54,6 +54,10 @@ footer {
             color: white;
             line-height: 14px;
         }
+
+        &:after {
+            content: none;
+        }
     }
 
     .address,
